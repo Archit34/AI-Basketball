@@ -1,5 +1,5 @@
 body {
-  background-color:#F0E5DE;
+  background-color:#deecf0;
   font-family: Righteous;
   padding: 0;
   margin: 0;
@@ -23,7 +23,7 @@ nav .navbar-nav li a {
 }
 
 .upload-image-thumb {
-  max-width: 45vw;
+  max-width: 30vw;
 }
 
 .landing-container {
@@ -43,11 +43,11 @@ nav .navbar-nav li a {
     display: flex;
     flex-direction: row;
     width: 100%;
-    background-color: #7C7877;
+    background-color: #a8f75e;
 }
 
 .titleandbutton {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,6 +57,7 @@ nav .navbar-nav li a {
 
 .title {
     font-size: 4.8vw;
+    color: black;
 }
 
 .titleinfo {
@@ -128,6 +129,14 @@ nav .navbar-nav li a {
 .image-container {
     display: flex;
     flex-direction: column;
+    margin-left: 6rem;
+    margin-top: 2rem;
+}
+.image-container1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rem;
+    margin-top: 2rem;
 }
 
 .stat-container {
@@ -135,19 +144,21 @@ nav .navbar-nav li a {
     padding-bottom: 1vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #f1bbba;
     border: 5px solid #7c7877;
     border-radius: 10px;
 }
 
 .result-stat-container {
-    padding-bottom: 1vw;
+    /* padding-bottom: 1vw; */
     display: flex;
     flex-direction: row;
-    background-color: #f1bbba;
+    background-color: #a3f38a;
     border: 5px solid #7c7877;
     border-radius: 10px;
+    margin: 1.5rem;
+    width:fit-content;
 }
 
 .stat-row {
@@ -164,6 +175,7 @@ nav .navbar-nav li a {
     margin: 0;
 }
 
+
 .statname-container {
     margin-top: 0.6vw;
 }
@@ -171,12 +183,17 @@ nav .navbar-nav li a {
 .stat-name {
     font-family: Righteous;
     font-style: normal;
-    font-weight: normal;
+    font-size: 1.2vw;
+    font-weight: 550;
+    color: #292828;
+}
+.stat-name1 {
+    font-family: Righteous;
+    font-style: normal;
     font-size: 1.5vw;
     font-weight: 550;
-    color: #7c7877;
+    color: #292828;
 }
-
 .underline {
     width: 35%;
     height: 0.6vw;
@@ -202,7 +219,6 @@ nav .navbar-nav li a {
     flex-direction: column;
     margin-bottom: 1vw;
 }
-
 .image-stat {
     margin-top: 2vw;
     margin-bottom: 1vw;
@@ -256,22 +272,22 @@ nav .navbar-nav li a {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    height: 12vw;
-    width: 12vw;
+    height: 8vw;
+    width: 8vw;
     text-align: center;
     text-decoration: none;
     margin: 1.5vw 1vw 1.5vw 3vw;
     border-radius: 100%;
-    font-size: 2.5vw;
+    font-size: 1vw;
     font-weight: bold;
     cursor: pointer;
-    animation: shadow-pulse 1.25s infinite;
+    /* animation: shadow-pulse 1.25s infinite; */
 }
 
 .submit-button:hover {
     background-color: #e22825;
     transform: scale(1.1);
-    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    /* text-shadow: 0px 0px 6px rgba(255, 255, 255, 1); */
     -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
     -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
     transition: all 0.4s ease 0s;
@@ -295,10 +311,12 @@ button {
 }
 
 .result-title {
-    margin-left: 3vw;
-    color: #7c7877;
+    margin: 2vw;
+    color: #070707;
     font-size: 2.5vw;
     font-weight: bold;
+    text-align: center;
+    justify-content: center;
 }
 
 .hint {
@@ -326,13 +344,18 @@ button {
 
 .result-container {
     width: 100%;
+    justify-content: center;
 }
 
 .shot-container {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
+    width: fit-content;
     flex-direction: row;
+}
+.shot-counting1 {
+    margin-left: 6rem;
 }
 
 .trajectory-underline {
@@ -347,34 +370,35 @@ button {
 }
 
 .landing-image {
-    width: 50%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
 }
 
 .demo-image {
-    margin-top: 1vw;
+    margin: 1vw;
     width: 40vw;
+    height: 22vw;
 }
 
 .mainbutton {
-    font-size: 2vw;
+    font-size: 1.5vw;
     padding: 1vw 5vw;
-    border-radius: 10px;
-    background-color: rgb(142, 184, 182);
+    border-radius: 5px;
+    background-color: rgb(56, 136, 132);
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    animation: shadow-pulse 1.25s infinite;
+    /* animation: shadow-pulse 1.25s infinite; */
 }
 
 .mainbutton:hover {
-    background-color: rgb(75, 107, 106);
+    background-color: rgb(72, 141, 139);
     transform: scale(1.1);
-    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    /* text-shadow: 0px 0px 6px rgba(255, 255, 255, 1); */
     -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
     -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
     transition: all 0.4s ease 0s;
@@ -392,9 +416,9 @@ button {
     font-size: 1.1vw;
 }
 
-.delay-animation {
+/* .delay-animation {
     animation: shadow-pulse 1.5s infinite;
-}
+} */
 
 .disable-animation {
     animation: none;
